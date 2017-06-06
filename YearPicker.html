@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Styling links</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+	hr{ 
+		margin: 2px 0 0 0;
+	}
+	a{
+		cursor:pointer;
+	}
+	#yearBetween{
+		margin-left: 67px;
+	}
+
+    </style>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="YearPicker.js"></script>
+  </head>
+  <body>
+	<div class="form-group col-sm-8" style="display:inline-flex;">
+		<div style="display:inline-flex;">
+			<label class="col-sm-4">Select Year</label>
+			<input type="text" id="txtYear1" class="form-control cols-sm-2"/>
+			<img id="yearImage" src="https://cdn4.iconfinder.com/data/icons/VISTA/accounting/png/400/calendar_year.png" style="cursor: pointer;width:50px; height:35px;"></img>
+		</div>
+		<div id="divYear1" style="display:none;border: 0.5px solid lightgrey; height:auto;">
+			<div style="background:lightgrey;height: 12%;">
+				<a id="btnPrev1" class="btnPrev glyphicon glyphicon glyphicon-menu-left" style="float:left;margin: 4px;"></a>
+				<input style="text-align: center; width: 43%; border: none; margin-left: 20%;" type="text" id="yearBetween" class="btn-default"/>
+				<a id="btnNext1" class="btnNext glyphicon glyphicon glyphicon-menu-right" style="float:right;margin: 4px;"></a>
+			</div>
+			<hr/>
+			<div id="yearContainer" style="width:260px; height:auto;">
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
